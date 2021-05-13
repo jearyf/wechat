@@ -1,0 +1,55 @@
+/* video/components/dcfs-session/dcfs-session.wxss */
+page{
+  height: 100%;
+  width: 100%;
+ }
+ .dcfs-session-wrapper{
+  position: relative;
+   height: 100%;
+   width: 100%;
+   color: black;
+  font-size: 40rpx;
+  overflow: hidden;
+ }
+ .dcfs-camera-discern {
+  width: 100%;
+  height: 100%;
+  /* position: fixed;
+  top: 0;
+  z-index: 2000; */
+}
+.dcfs-verbal-wrapper{
+  position: fixed;
+  top: 20%;
+  left: 0;
+  background: rgba(78, 75, 75, 0.3);
+  z-index: 2000;
+  color: white;
+  font-size: 30rpx;
+  padding: 20rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  max-width: 70%;
+  
+}
+.dcfs-verbal-close{
+  display: inline-block;
+  right: 15rpx;
+  top: 50%;
+  font-size: 40rpx;
+  z-index: 2010;
+  color: white;
+  text-align: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+  padding: 20rpx 15rpx;
+}
+.dcfs-verbal-text{
+  display: inline-block;
+  width: fit-content;
+  max-width: 90%;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-line;
+  vertical-align: middle;
+}

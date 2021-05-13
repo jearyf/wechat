@@ -1,0 +1,8 @@
+<!--video/components/dcfs-audio/dcfs-audio.wxml-->
+<cover-view class="dcfs-audio-wrapper">
+  <cover-view class="dcfs-audio-content">
+    <cover-image src="{{defaultIcon}}" class="dcfs-audio-head-img"></cover-image>
+    <cover-view class="dcfs-audio-text">{{account}}</cover-view>
+    <cover-view class="dcfs-audio-text">{{timer}}</cover-view>
+  </cover-view>
+</cover-view>

@@ -1,0 +1,19 @@
+<!-- 被叫等待布局 -->
+	<view class='dcfs-called-wrapper'>
+		<!-- <image src="{{mineHeadImg}}" style="width:100%;height:100%;"></image> -->
+		<view class="dcfs-called-content">
+			<image src="{{defaultIcon}}" class="dcfs-call-head-img"></image>
+			<text class="dcfs-called-account">{{account}}</text>
+			<text class="dcfs-called-hint">对方邀请你开始视频聊天</text>
+			<view class="dcfs-called-action">
+				<view class="dcfs-called-btn">
+					<image src="../images/netcall-reject.png" bindtap="onReject" class="dcfs-called-img"></image>
+					<text class="dcfs-called-text">拒绝</text>
+				</view>
+				<view class="dcfs-called-btn">
+					<image src="../images/agree_icon.png" bindtap="onAnswer" class="dcfs-called-img"></image>
+					<text class="dcfs-called-text">接听</text>
+				</view>
+			</view>
+		</view>
+	</view>

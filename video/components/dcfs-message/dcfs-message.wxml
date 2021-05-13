@@ -1,0 +1,16 @@
+<!--components/dcfs-message/dcfs-message.wxml-->
+<cover-view class="dcfs-message-wrapper" hidden="{{isHidden}}">
+  <cover-view class="dcfs-message-list" scroll-top="{{scrollTop}}">
+  <block wx:for='{{chatList}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+    <cover-view class="dcfs-message-item" id="item{{index}}">
+      <cover-view class="dcfs-message-key">{{item.key}}：</cover-view>
+      <cover-view class="dcfs-message-value">{{item.value}}</cover-view>
+    </cover-view>
+  </block>
+  </cover-view>
+  <cover-view class="dcfs-message-input">
+    <cover-view class="dcfs-message-in" bindtap="openKeyboard" style="color:{{inputVal?'#FFFFFF':'#F1F1F1'}}">{{inputVal?inputVal:placeholder}}</cover-view>
+    <input class="dcfs-message-in-hind" bindconfirm='sendClick' focus="{{inputFocus}}" adjust-position='{{true}}' model:value='{{inputVal}}' confirm-type='send' placeholder-style="color:#fff"></input>
+    <cover-image src="../images/msg_arrow_icon.png" class="dcfs-message-send" bindtap="sendClick"></cover-image>
+  </cover-view>
+</cover-view>

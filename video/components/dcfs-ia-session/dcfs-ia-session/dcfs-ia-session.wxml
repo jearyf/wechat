@@ -1,0 +1,5 @@
+<!--video/components/dcfs-ia-session/dcfs-ia-session/dcfs-ia-session.wxml-->
+<view>
+  <dcfs-ia-call wx:if="{{isCalling}}" bind:cancel="onCancel"/>
+  <dcfs-ia-connect bind:connect="onConnect" bind:hangup="onHangup" bind:join="onJoinRoom" video-size="{{videoSize}}"/>
+</view>

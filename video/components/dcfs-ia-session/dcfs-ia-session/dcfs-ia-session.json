@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dcfs-ia-call": "../dcfs-ia-call/dcfs-ia-call",
+    "dcfs-ia-connect": "../dcfs-ia-connect/dcfs-ia-connect"
+  }
+}

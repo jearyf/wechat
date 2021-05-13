@@ -1,0 +1,29 @@
+<!--components/dcfs-control/dcfs-control.wxml-->
+<cover-view class="dcfs-control-wrapper" hidden="{{isHidden}}">
+<dcfs-message bind:message="onMessage" is-hidden="{{!isMsgChat}}"/>
+<cover-view class="dcfs-control-wrapper2">
+  <cover-view class="dcfs-control-module">
+    <cover-view class="dcfs-control-module-item">
+      <cover-image src="{{isMuted?'../images/mute_un_icon.png':'../images/mute_icon.png'}}" bindtap="onMute" class="dcfs-control-module-item-img"></cover-image>
+      <cover-view class="dcfs-control-text">{{isMuted?'取消静音':'静音'}}</cover-view>
+    </cover-view>
+    <cover-view class="dcfs-control-module-item">
+      <cover-image src="../images/pause_un_chat_icon.png" bindtap="onPause" class="dcfs-control-module-item-img"></cover-image>
+      <cover-view class="dcfs-control-text">{{isPause?'取消暂停':'暂停'}}</cover-view>
+    </cover-view>
+    <cover-view class="dcfs-control-module-item">
+      <cover-image src="{{isMsgChat?'../images/msg_close.png':'../images/msg_open.png'}}" bindtap="onMsg" class="dcfs-control-module-item-img"></cover-image>
+      <cover-view class="dcfs-control-text">{{isMsgChat?'关闭消息':'消息'}}</cover-view>
+    </cover-view>
+    <cover-view class="dcfs-control-module-item">
+      <cover-image src="{{isVideo?'../images/audio_video_icon.png':'../images/video_audio_icon.png'}}" bindtap="onSwitchMode" class="dcfs-control-module-item-img"></cover-image>
+      <cover-view class="dcfs-control-text">{{isVideo?'切换音频':'切换视频'}}</cover-view>
+    </cover-view>
+    </cover-view>
+    <cover-view class="dcfs-control-hangup">
+      <cover-image src="../images/netcall-reject.png" bindtap="onHangup" class="dcfs-control-img"></cover-image>
+      <cover-view class="dcfs-control-text">挂断</cover-view>
+    </cover-view>
+</cover-view>
+  
+</cover-view>

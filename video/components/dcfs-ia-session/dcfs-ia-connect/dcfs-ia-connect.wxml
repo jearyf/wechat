@@ -1,0 +1,8 @@
+<!--video/components/dcfs-ia-session/dcfs-ia-connect/dcfs-ia-connect.wxml-->
+<view>
+  <view wx:if="{{isConnect}}">
+    <dcfs-ia-pusher id="dcfs-pusher" url="{{userlist[0].url}}" beauty="nature" video-size="{{videoSizeData}}" bindpushfailed="onPusherFailed">
+      <dcfs-ia-control bind:hangup="onHangup"></dcfs-ia-control>
+    </dcfs-ia-pusher>
+  </view>
+</view>

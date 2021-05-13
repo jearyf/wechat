@@ -1,0 +1,30 @@
+<view class="container"> 
+  <view >
+    <image src="../../../../images/huxing/V00023/logo1x.png" class="logo"></image>
+  </view>
+  <view>
+    <image src="../../../../images/huxing/V00023/sqre.png" class="sqre"></image>
+  </view>
+  <view class="text">
+    <text>法人意愿核实</text>
+  </view>
+  <view class="lastsix">
+    <text>请输入身份证后六位</text>
+  </view>
+  <view class="login-from"> 
+  <!-- <view class="inputView"> 
+    <input class="inputText"  maxlength="6" bindinput="usernameInput" /> 
+  </view> 
+  <view class="line"></view> 
+  <view class="loginBtnView"> 
+    <button class="loginBtn" bindtap="sure">确定</button> 
+  </view>  -->
+
+    <view class="query_num_block">
+        <input class="num_item_block" wx:for="{{6}}" wx:key="{{index}}" disabled bindtap='onFocus' value="{{username.length>=index+1?username[index]:''}}" />
+    </view>
+    <input name="username" class='hidden_ipt' maxlength="{{6}}" focus="{{isFocus}}" bindinput="setValue"></input>
+    <view class="confirm" bindtap='sure'>确认</view>
+  </view>
+
+</view>

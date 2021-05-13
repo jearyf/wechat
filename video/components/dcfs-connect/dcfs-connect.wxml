@@ -1,0 +1,21 @@
+<!--components/dcfs-connect/dcfs-connect.wxml-->
+<view class="dcfs-connect-wrapper">
+  <view class="dcfs-video-wrapper" wx:if="{{isConnect}}" bindtap="onClick">
+    <block wx:for="{{userlist}}" wx:for-item="user" wx:for-index="index" wx:key="index">
+      <dcfs-pusher wx:if="{{user.uid === loginUser.uid}}" id="dcfs-pusher" url="{{user.url}}" enable-camera="{{isCamera}}" muted="{{isMuted}}" beauty="true" config="{{user.position}}" bindpushfailed="onPusherFailed" style="visibility:{{fullScreenFlag?'hidden':'visible'}}">
+        <view class="dcfs-connect-video-tip" wx:if="{{!fullScreenFlag}}">我</view>
+      </dcfs-pusher>
+      <dcfs-player wx:if="{{user.uid !== loginUser.uid}}" id="dcfsplayer-{{user.uid}}" uid="{{user.uid}}" url="{{user.url}}" config="{{user.position}}" bindpullfailed="onPullFailed" bindtap="fullScreen" style="visibility:{{user.hidden}};">	
+      <view class="dcfs-connect-video-tip" wx:if="{{user.hidden==='visible'||!user.hidden}}">座席{{user.agentId}}</view>			
+      </dcfs-player>
+    </block>
+  </view>
+  <dcfs-audio wx:if="{{!isVideo&&platform=='android'}}" timer="{{duration}}" account="{{}}"/>
+  <dcfs-audio-ios wx:if="{{!isVideo&&platform=='ios'}}" timer="{{duration}}" account="{{}}"/>
+  <cover-view class="dcfs-connect-timer" wx:if="{{isVideo}}">{{duration}}</cover-view>
+  <dcfs-control bind:hangup="onHangup" bind:switchMode="onSwitchMode" bind:muted="onMute" bind:pause="onPause" is-hidden="{{!showControl}}"/>
+  <cover-view class="camera-control" wx:if="{{isVideo&&showControl}}">
+    <cover-image class="camera-control-item" src="../images/netcall-revert-camera.png" bindtap="switchCamera"></cover-image>
+    <cover-image class="camera-control-item" src="{{isCamera?'../images/netcall-camera.png':'../images/netcall-camera-close.png'}}" bindtap="toggleCamera"></cover-image>
+  </cover-view>
+</view>

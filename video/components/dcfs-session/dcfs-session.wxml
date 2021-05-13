@@ -1,0 +1,13 @@
+<view class="dcfs-session-wrapper">
+  <dcfs-call wx:if="{{isCalling}}" bind:cancel="onCancel"/>
+  <dcfs-called wx:if="{{beCalling}}" bind:reject="onReject"  bind:anwser="onAnwser" account="{{sessionInfo.remoteAccount}}"/>
+  <dcfs-connect bind:connect="onConnect" bind:hangup="onHangup" is-camera="{{isCamera}}" show-control="{{!isShowBusi}}" bind:join="onJoinRoom"/>
+  <web-view src="{{busiData.url}}" wx:if="{{isShowBusi}}" bindmessage="onBindmessage"></web-view>
+	<view class="dcfs-camera-discern" wx-if="{{isShowOcr}}">
+		<dcfs-camera bind:cancel="onCancelCameraHandler" bind:affirm="onCameraResultHandler" mode="{{mode}}" agentId="{{busiData.agentId}}" batchId="{{busiData.batchId}}"></dcfs-camera>
+	</view>
+  <cover-view wx:if="{{verbalTips}}" class="dcfs-verbal-wrapper">
+    <cover-view class="dcfs-verbal-text">{{verbalTips}}</cover-view>
+    <cover-view class="dcfs-verbal-close" bindtap="onCloseVerbal">X</cover-view>
+  </cover-view>
+</view>

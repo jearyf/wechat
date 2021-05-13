@@ -1,0 +1,249 @@
+/**index.wxss**/
+
+.willingnessVeriffication{
+  width: 100%;
+  height: 100%;
+}
+.willingnessVeriffication .background{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.willingnessVeriffication .header-area {
+  width: 85%;
+  height: 13.3rem;
+  /* border: 1px solid black; */
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.willingnessVeriffication .video-box{
+  width: 47%;
+  height: 100%;
+  margin-top: 1rem;
+  /* border: 1px solid black; */
+}
+.video-container {
+  display: flex;
+  flex-direction: row;
+}
+.tips {
+  flex: 1;
+}
+.willingnessVeriffication .hint-box{
+  width: 55%;
+  height: 96%;
+  background-color: #F9EEE6;
+  border-radius: 0.7rem;
+}
+
+.willingnessVeriffication .hint-box-content{
+  padding:0.2rem 1rem 0.8rem 1rem;
+  height: 87%;
+}
+
+.willingnessVeriffication .hint-title{
+  display: flex;
+  align-items: center;
+}
+
+.willingnessVeriffication .stront-text{
+  color: #754533;
+  font-weight:bold;
+  font-size:1rem;
+  margin-left: 0.5rem;
+}
+
+.willingnessVeriffication .hint-content{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.willingnessVeriffication .conversation-area{
+  height: 28rem;
+  /* border: 1px solid black; */
+  width: 85%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.willingnessVeriffication .conversation-content{
+  height: 20rem;
+  background-color:transparent;
+  /* overflow-y: scroll; */
+}
+
+.willingnessVeriffication .willingnessVeriffication-btn{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 3rem;
+  /* background-color:transparent; */
+}
+
+.willingnessVeriffication .btn-hint{
+  width: 12rem;
+  height: 2.4rem;
+  border-radius: 1.7rem;
+  border: 0.1rem solid rgb(234, 44, 29);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(234, 44, 29);
+  font-size:0.9rem;
+}
+.awaitin{
+  margin-left: 2rem;
+}
+.willingnessVeriffication .btn-hint-span{
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(234, 44, 29);
+}
+
+
+.willingnessVeriffication .conversation-leftArea{
+  display: flex;
+  /* padding: 2vw 11vw 2vw 2vw; */
+  padding: 0.13rem 0.7rem 0.13rem 0.13rem;
+  /* height: 4rem; */
+}
+.willingnessVeriffication .conversation-img-box{
+  width: 2rem;
+  height: 2rem;
+}
+
+.willingnessVeriffication .conversation-img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10rpx;
+}
+
+.willingnessVeriffication .honeyTips{
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 10rpx;
+}
+
+.willingnessVeriffication .conversation-text-leftbox{
+  font-size: 25rpx;
+  color: #444;
+  line-height: 5vw;
+  padding: 2vw 2.5vw;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  /* z-index: 10; */
+  margin-left: 0.5rem;
+}
+
+.willingnessVeriffication .conversation-rightArea{
+  display: flex;
+  justify-content:
+  flex-end;
+  /* height: 4rem; */
+  padding: 2vw 2vw 2vw 11vw;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.willingnessVeriffication .conversation-text-rightbox{
+  font-size: 25rpx;
+  color: rgb(255, 255, 255);
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: rgb(234, 44, 29);
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  /* z-index: 10; */
+  margin-right: 0.5rem;
+}
+
+.willingnessVeriffication .willingnessVeriffication-submit{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.willingnessVeriffication .btn-submit{
+  border-radius: 3.3rem;
+  background-color: rgb(234, 44, 29);
+  width: 6.7rem;
+  height: 2.7rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.willingnessVeriffication .btn-hint-span{
+  color: rgb(255, 255, 255);
+  margin-left: 1.2rem;
+}
+
+.willingnessVeriffication .model-box{
+  width: 65%;
+  height: 21.3rem;
+  position: fixed;
+  z-index: 999;
+  background: #FFFFFF;
+  box-shadow:0px 0.2rem 0.2rem #c8c8c8 ;
+  overflow: hidden;
+  margin-top:14.5rem;
+  border-radius: 0.7rem;
+}
+
+.willingnessVeriffication .model-title-box{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.willingnessVeriffication .model-title-content{
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.willingnessVeriffication .model-img-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.willingnessVeriffication .model-img{
+  height: 10rem;
+  width: 10rem;
+}
+
+.willingnessVeriffication .model-button{
+  background-color: rgb(234, 44, 29);
+  width: 8rem;
+  border-radius: 25px;
+  color:rgb(255, 255, 255);
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.willingnessVeriffication .background-box{
+  border: 0.1rem solid black;
+  background: #000;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  z-index: 2 ;
+}

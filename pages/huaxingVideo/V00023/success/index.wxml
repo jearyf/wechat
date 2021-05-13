@@ -1,0 +1,15 @@
+<view class="container"> 
+  <view  >
+    <image src="../../../../images/huxing/V00023/pic@1x.png" class="pic"></image>
+  </view>
+  <view >
+    <image src="../../../../images/huxing/V00023/logo1x.png" class="logo"></image>
+  </view>
+  <view>
+    <image src="../../../../images/huxing/V00023/sqre.png" class="sqre"></image>
+  </view>
+  <view class="text">
+    <text>法人意愿核实完成</text>
+  </view>
+</view>
+

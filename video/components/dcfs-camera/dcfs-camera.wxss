@@ -1,0 +1,78 @@
+/* components/dcfs-camera/dcfs-camera.wxss */
+page{
+  height: 100%;
+  width: 100%;
+ }
+ .camera-content-style{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2010;
+}
+.camera-content{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  z-index: 2020;
+}
+
+.canvas-style{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 9000px;
+}
+.mask-layer-content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2030;
+}
+.mask-layer-top{
+ flex-grow: 1;
+ background: rgba(0, 0, 0, 0.7);
+}
+.mask-layer-bottom{
+  flex-grow: 2;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  padding-top: 40rpx;
+}
+.camera-control-content{
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 130rpx;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2040;
+}
+.take-photo-btn{
+  width: 120rpx;
+  height: 120rpx;
+}
+.take-photo-btn-cancel{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 50rpx;
+}
+.take-photo-btn-confirm{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 50rpx;
+}

@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/huaxingVideo/V00023/wx/index",
+    "pages/huaxingVideo/V00023/enviromentPre/index",   
+    "pages/huaxingVideo/V00023/willingnessVeriffication/index", 
+    "pages/huaxingVideo/V00023/errmasge/index",
+    "pages/huaxingVideo/V00023/success/index",
+    "verify_mpsdk/index/index",
+    "video/components/dcfs-empty/dcfs-empty",
+    "video/components/dcfs-session/dcfs-session"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "视频银行",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  }
+}

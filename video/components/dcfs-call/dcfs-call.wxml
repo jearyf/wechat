@@ -1,0 +1,12 @@
+<!-- 呼叫等待布局 -->
+    <view class="dcfs-call-wrapper">
+      <view class="dcfs-call-content">
+        <image src="{{defaultIcon}}" class="dcfs-call-head-img"></image>
+        <text class="dcfs-call-company">神州数码</text>
+        <text class="dcfs-call-hint">{{hintMsg}}</text>
+        <view class="dcfs-call-btn">
+          <image src="../images/netcall-reject.png" bindtap="onCancel" class="dcfs-call-img"></image>
+          <text class="dcfs-call-text">挂断</text>
+        </view>
+      </view>
+    </view>

@@ -1,0 +1,25 @@
+<!--components/dcfs-pusher/dcfs-pusher.wxml-->
+<view class="pusher-container" id="rtcpusher" style="left: {{config.x}}px; top: {{config.y}}px; width: {{config.width}}px; height: {{config.height}}px; position: absolute;">
+  <live-pusher
+    style="height:{{config.height}}px; position: absolute; width: 100%; " 
+    url="{{url}}" 
+    wx:if="{{url.length !== 0}}"
+    mode="RTC" 
+    aspect="{{aspect}}" 
+    class="camera" 
+    audio-quality="low"
+    bindstatechange="stateChangeHandler" 
+    bindnetstatus="netChangeHandler" 
+    device-position="{{position}}"
+    enable-camera="{{enableCamera}}"
+    muted="{{muted}}" 
+    beauty="{{beauty}}"
+    whiteness="{{whiteness}}"
+    max-bitrate="{{maxBitrate}}" 
+    min-bitrate="{{minBitrate}}"
+    debug="{{debug}}" 
+    autopush="true">
+    <slot />
+  </live-pusher>
+  
+</view>

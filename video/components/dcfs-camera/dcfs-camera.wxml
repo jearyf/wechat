@@ -1,0 +1,37 @@
+<!--components/dcfs-camera/dcfs-camera.wxml-->
+<view>
+  <camera wx:if="{{isShowCamera}}" device-position="back" flash="off" frame-size="small" binderror="onCameraError" class="camera-content-style">
+    <cover-view class="camera-content">
+      <!-- 蒙层区域 -->
+      <cover-view class="mask-layer-content">
+        <cover-view class="mask-layer-top"></cover-view>
+        <cover-image src="../images/ocr/ic_mask_front.png" wx:if="{{isIDFront&&isShowCamera}}" style="width:{{screenSize.width}}px;height:{{screenSize.width*0.6}}px"></cover-image>
+        <cover-image src="../images/ocr/ic_mask_back.png" wx:if="{{isIDBack&&isShowCamera}}" style="width:{{screenSize.width}}px;height:{{screenSize.width*0.6}}px;display:block"></cover-image>
+        <cover-image src="../images/ocr/bank_card.png" wx:if="{{isBankCard&&isShowCamera}}" style="width:{{screenSize.width}}px;height:{{screenSize.width*0.6}}px;display:block"></cover-image>
+        <cover-view class="mask-layer-bottom">
+          <cover-view>请点击下方拍照按钮并确认</cover-view>
+        </cover-view>
+      </cover-view>
+      <!-- 控制区域显示 -->
+      <cover-view class="camera-control-content">
+        <cover-image bindtap="onCancel" class="take-photo-btn-cancel" src="../images/ocr/icon_cancel.png"></cover-image>
+        <cover-image bindtap="onTakePhoto" class="take-photo-btn" src="../images/ocr/icon_take_photo.png"></cover-image>
+        <cover-view class="take-photo-btn-cancel" wx:if="{{isShowCamera}}"></cover-view>
+      </cover-view>
+    </cover-view>
+  </camera>
+  <cover-view wx:else class="camera-content">
+    <!-- 蒙层区域 -->
+    <cover-view class="mask-layer-content">
+      <cover-view class="mask-layer-top"></cover-view>
+      <cover-image src="{{photoPath}}" wx:if="{{isCrop}}" style="width:{{screenSize.width}}px;height:{{screenSize.width*0.6}}px"></cover-image>
+      <cover-view class="mask-layer-bottom"></cover-view>
+    </cover-view>
+    <!-- 控制区域显示 -->
+    <cover-view class="camera-control-content">
+      <cover-image bindtap="onCancel" class="take-photo-btn-cancel" src="../images/ocr/icon_cancel.png"></cover-image>
+      <cover-image bindtap="onConfirm" class="take-photo-btn-confirm" src="../images/ocr/icon_take_affire.png"></cover-image>
+    </cover-view>
+  </cover-view>
+  <canvas canvas-id="image-canvas" class="canvas-style"></canvas>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dcfs-ia-pusher": "../../dcfs-ia-session/dcfs-ia-pusher/dcfs-ia-pusher",
+    "dcfs-ia-control": "../../dcfs-ia-session/dcfs-ia-control/dcfs-ia-control"
+  }
+}

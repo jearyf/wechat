@@ -1,0 +1,79 @@
+.dcfs-message-wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 20px 2rpx 0;
+  font-size: 40rpx;
+  z-index: 999;
+}
+.dcfs-message-input{
+  width: 90%;
+  background: rgba(78, 75, 75, 0.3);
+  border-radius: 30rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  font-size: 30rpx;
+  justify-content: space-between;
+}
+.dcfs-message-in{
+  flex-grow:1;
+  color: #222222;
+  padding: 10rpx 20rpx;
+  z-index: 99999;
+  text-align: left;
+  color: white;
+}
+.dcfs-message-in-hind{
+  width: 0.5px;
+  height: 0.5px;
+  color: transparent;
+  position:fixed;
+  right: -500px;
+  top: -100;
+}
+.dcfs-message-send{
+  display: inline-block;
+  height: 50rpx;
+  width: 80rpx;
+  align-self: center;
+  padding: 12rpx 20rpx;
+  box-sizing: border-box;
+}
+.dcfs-message-list{
+  margin-bottom: 20rpx;
+  max-height: 400rpx;
+  overflow-y: scroll;
+  width: 90%;
+}
+.dcfs-message-item{
+  /* border-radius: 10rpx; */
+  margin-left: 20rpx;
+  /* background: rgba(78, 75, 75, 0.3); */
+  padding: 10rpx 20rpx;
+  margin-top: 10rpx;
+  width: 100%;
+}
+.dcfs-message-key{
+  display: inline-block;
+  color: #E1893E;
+  font-size: 30rpx;
+  vertical-align: top;
+  max-width: 30%;
+  text-align: right;
+}
+.dcfs-message-value{
+  display: inline-block;
+  color: white;
+  font-size: 30rpx;
+  /* margin-left: 5rpx; */
+  /* white-space: pre-wrap; */
+  vertical-align: top;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-line;
+  width: calc(80% - 50rpx);
+}

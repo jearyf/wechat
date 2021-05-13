@@ -1,0 +1,13 @@
+<!--video/components/dcfs-ia-session/dcfs-ia-call/dcfs-ia-call.wxml-->
+<view class="dcfs-ia-call-wrapper">
+  <view class="dcfs-ia-call-content">
+    <image src="../../images/default-icon.png" class="dcfs-ia-call-head-img"></image>
+    <text class="dcfs-ia-call-company">华兴银行</text>
+    <text class="dcfs-ia-call-hint">{{hintMsg}}</text>
+    <view class="dcfs-ia-call-btn">
+      <!-- <image src="../../images/netcall-reject.png" bindtap="onCancel" class="dcfs-ia-call-img"></image>
+      <text class="dcfs-ia-call-text">挂断</text> -->
+    </view>
+  </view>
+</view>
+

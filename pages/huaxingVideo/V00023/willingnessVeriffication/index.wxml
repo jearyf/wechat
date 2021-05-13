@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container willingnessVeriffication">
+  <view class="header-area">
+    <view class="video-box">
+       <dcfs-ia-session style="width:{{videoSize.width}}px;height:{{videoSize.height}}px" info="{{sessionInfo}}" bind:callError="callError" video-size="{{videoSize}}" bind:hangup="hangUp" bind:aaaaa="onLoad" ></dcfs-ia-session> 
+    </view>
+    <view class="hint-box">
+      <view class="hint-box-content">
+        <view class="hint-title">
+          <!-- <icon class="icon-box-img" type="warn" size="23" color="RGB(128, 128, 128)"></icon> -->
+          <image class="honeyTips" src='../../../../images/huxing/V00023/tis.png'></image>
+          <text class="stront-text">温馨提示</text>
+        </view>
+        <view class="hint-content">
+          <text style="color: #754533;">▎</text>
+          <text style="color: #754533;font-size:12px;">保持环境安静，避免嘈杂</text>
+        </view>
+        <view class="hint-content">
+          <text style="color: #754533;">▎</text>
+          <text style="color: #754533;font-size:12px;">脸部正对镜头，且完整展示在头像框中</text>
+        </view>
+        <view class="hint-content">
+          <text style="color: #754533;">▎</text>
+          <text style="color: #754533;font-size:12px;">双录过程中请不要离开本页面或切换到其他APP中</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="conversation-area">
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" id="scrollpage" scroll-into-view="{{toview}}" class="conversation-content" >
+      <view wx:for="{{answer}}" wx:key="index" >
+        <view class="conversation-leftArea" id="t{{index}}" wx:if="{{item.value  === 0}}">
+          <view class="conversation-img-box">
+            <image class="conversation-img" src='../../../../images/huxing/V00023/mine.png'></image>
+          </view>
+          <view class='conversation-text-leftbox' >{{item.key}}</view>
+        </view>
+        <!-- 客户回答消息 -->
+        <view class="conversation-rightArea" id="t{{index}}" wx:if="{{item.value === 1}}">
+          <view class='conversation-text-rightbox'>{{item.key}}</view>
+          <view class="conversation-img-box">
+            <image class="conversation-img" src='../../../../images/huxing/V00023/customer.png'></image>
+          </view>
+        </view>
+      </view>
+    </scroll-view >
+    <view class="willingnessVeriffication-btn" wx:if="{{five == true}}">
+      <button class="btn-hint">
+        请在倒计时{{three}}秒内回答
+      </button>
+    </view>
+ 
+    <view class="willingnessVeriffication-btn" wx:if="{{time == true}}">
+      <button class="btn-hint">
+        <text class="awaitin">识别中。。。</text>
+      </button>
+    </view>
+    <view class="willingnessVeriffication-submit"  wx:if='{{isShowwSubmitBtn==true}}'>
+      <button class="btn-submit" bindtap="sumitResult">
+        <text class="btn-hint-span" >提交</text>
+      </button>
+    </view>
+  </view>
+  <view class="model-box" wx:if='{{showModal}}'>
+    <view style="padding:20px;">
+      <view class="model-title-box">
+        <text class="model-title-content">录制完毕，请点击关闭双录</text>
+      </view>
+      <view class="model-img-box">
+        <image class="model-img" src="../../../../images/huxing/V00023/illustrations.png" alt="图片加载失败"></image>
+      </view>
+      <view class="model-button-box">
+        <button class="model-button" bindtap="closel">
+          <text>操作成功</text>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class="background-box" wx:if="{{showModal}}"></view>
+</view> 
+

@@ -1,0 +1,30 @@
+.page{
+  display: block;
+  /* margin:auto; */
+  height: 100%;
+}
+  .pic{
+    width:4rem;
+    height: 4rem;
+   padding-top: 8rem;
+  }
+  .logo{
+    width: 10.5rem;
+    height:2rem;
+   margin-top: 2rem;
+  }
+  .sqre{
+    width: 12rem;
+    height:0.5rem;
+   margin-top:1rem;
+  }
+  .text{
+    margin-top: 1.5rem;
+    padding-bottom: 25rem;
+    color: grey;
+    font-size: large;
+  }
+  text{
+    letter-spacing:0.3rem;
+  }
+

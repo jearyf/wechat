@@ -1,0 +1,25 @@
+<!--video/components/dcfs-ia-session/dcfs-ia-pusher/dcfs-ia-pusher.wxml-->
+<view id="rtcpusher" style="width: {{videoSize.width}}px; height: {{videoSize.height}}px;">
+  <live-pusher
+    style="height:{{videoSize.height}}px; " 
+    url="{{url}}" 
+    wx:if="{{url.length !== 0}}"
+    mode="RTC" 
+    aspect="{{aspect}}" 
+    audio-quality="low"
+    bindstatechange="stateChangeHandler" 
+    bindnetstatus="netChangeHandler" 
+    device-position="{{position}}"
+    enable-camera="{{enableCamera}}"
+    beauty="{{beauty}}"
+    whiteness="{{whiteness}}"
+    max-bitrate="{{maxBitrate}}" 
+    min-bitrate="{{minBitrate}}"
+    debug="{{debug}}" 
+    autopush="true"
+    audio-reverb-type="2"
+    enable-mic="{enableMic}">
+    <slot />
+  </live-pusher>
+  
+</view>

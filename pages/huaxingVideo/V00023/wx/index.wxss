@@ -1,0 +1,171 @@
+/* pages/huaxingVideo/V00023/wx/index.wxss */
+page{ 
+  height: 100%; 
+  margin: 0;
+  padding:0 ;
+ } 
+  
+ .container { 
+  height: 100%; 
+  /* display: flex;  */
+  /* flex-direction: column;  */
+  padding: 0; 
+  box-sizing: border-box; 
+  /* background-color: rgb(156, 23, 78) */
+ } 
+ /*表单内容*/
+
+ .logo{
+  width: 10.5rem;
+  height:2rem;
+ margin-top: 4rem;
+}
+.sqre{
+  width: 12rem;
+  height:0.5rem;
+ margin-top:1.5rem;
+}
+.text{
+  margin-top: 1.5rem;
+  /* padding-bottom: 25rem; */
+  color: grey;
+  font-size: large;
+}
+text{
+  letter-spacing:0.3rem;
+}
+ .login-from { 
+  flex: auto; 
+  height:100%; 
+  /* padding-bottom: 20rem; */
+ } 
+ .lastsix{
+   margin-top: 3rem;
+   margin-left: -8rem; 
+   color: rgb(163, 163, 163);
+   font-size: 1rem;
+ }
+  
+ .inputView { 
+  /* background-color: #fff;  */
+  width:100%;
+  line-height: 45px; 
+  border-radius:20px;
+   border:1px solid #999999;
+ } 
+  
+ .loginLab { 
+  margin: 15px 0 15px 10px; 
+  color: #545454; 
+  font-size: 0.8rem
+ } 
+  
+ .inputText { 
+  flex: block; 
+  float: right; 
+  text-align: center;
+  margin-top: 11px;
+  color: #413e3e; 
+  font-size: 0.7rem;
+  content:text
+ } 
+ .line { 
+  margin-top: 8px; 
+ } 
+  
+ /*按钮*/
+ .loginBtnView { 
+  width: 100%; 
+  height: auto; 
+  /* background-color:#DCDCDC;  */
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+ } 
+  
+ .loginBtn { 
+  width: 90%; 
+  margin-top: 20px; 
+  border-radius:10px;
+  background-color: red;
+  color: white;
+ }
+/* 新的 */
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.mask{
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,.5);
+  position:fixed;
+  top:0;
+}
+
+.query {
+  z-index: 999;
+  background-color: #fff;
+  position: fixed;
+  top: 20%;
+  width: 412rpx;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height: 594rpx;
+  padding: 71rpx 56rpx 55rpx;
+  border-radius: 30rpx;
+}
+.query_item_name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120rpx;
+}
+.query-title{
+  font-size: 36rpx;
+  color: #000;
+  margin-bottom: 46rpx;
+}
+.query-text{
+  font-size: 24rpx;
+  color: #707070;
+}
+.query_num_block{
+  width: 105%;
+  display: -webkit-flex;
+  display: flex;
+  margin-top:2rem;
+  justify-content: space-between;
+}
+.confirm{
+  margin: 60rpx 0 40rpx;
+  width:540rpx;
+  height: 74rpx;
+  background: red; 
+  border-radius: 15rpx;
+  text-align: center;
+  line-height: 74rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.num_item_block{
+  height: 107rpx;
+  width:80rpx;
+  border-bottom:5rpx solid rgba(59,147,58,.55);
+  line-height: 107rpx;
+  text-align: center;
+  font-size: 73rpx;
+  color: #000;
+}
+.hidden_ipt{
+  height: 0rpx;
+  width:0rpx;
+  border:none;
+  margin:0;
+}
+.change-phone{
+  font-size: 24rpx;
+  color: #707070;
+}

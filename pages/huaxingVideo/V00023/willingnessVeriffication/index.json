@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "dcfs-ia-session": "../../../../video/components/dcfs-ia-session/dcfs-ia-session/dcfs-ia-session"
+  },
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "法人意愿核实",
+  "navigationBarTextStyle": "black"
+}

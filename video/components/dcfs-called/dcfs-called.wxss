@@ -1,0 +1,66 @@
+/* 被叫 */
+.dcfs-called-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  color: #fff;
+  font-size: 40rpx;
+  background-image: linear-gradient(#EC5C53, #FFFFFF);
+}
+
+.dcfs-called-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90%;
+  width: 84%;
+  left: 8%;
+  top: 5%;
+  background: white;
+  z-index: 10;
+}
+.dcfs-called-action{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+.dcfs-called-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.dcfs-called-img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.dcfs-called-text{
+  font-size: 26rpx;
+  color: #9B9B9B;
+  margin-top: 30rpx;
+}
+.dcfs-called-account{
+  font-size: 36rpx;
+  color: #222222;
+  font-weight: 600;
+  margin-top: 30rpx;
+}
+.dcfs-called-hint{
+  font-size: 26rpx;
+  color: #9B9B9B;
+  margin-top: 30rpx;
+}
+.dcfs-call-head-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: 25%;
+}
+

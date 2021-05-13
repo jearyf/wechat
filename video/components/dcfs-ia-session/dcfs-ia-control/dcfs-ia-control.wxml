@@ -1,0 +1,4 @@
+<!--video/components/dcfs-ia-session/dcfs-ia-control/dcfs-ia-control.wxml-->
+<view>
+  <!-- <view style="width:100%;text-align:center;color:white" bindtap="hangup">挂断</view> -->
+</view>

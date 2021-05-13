@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dcfs-control": "../dcfs-control/dcfs-control",
+    "dcfs-audio": "../dcfs-audio/dcfs-audio",
+    "dcfs-player": "../dcfs-player/dcfs-player",
+    "dcfs-pusher": "../dcfs-pusher/dcfs-pusher",
+    "dcfs-audio-ios": "../dcfs-audio/dcfs-audio-ios"
+  }
+}

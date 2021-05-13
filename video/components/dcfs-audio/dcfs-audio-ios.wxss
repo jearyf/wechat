@@ -1,0 +1,38 @@
+/* video/components/dcfs-audio/dcfs-audio-ios.wxss */
+.dcfs-audio-wrapper{
+  position: fixed;
+  background-color: #878999;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 40rpx;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 900;
+}
+.dcfs-audio-content{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+.dcfs-audio-head-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: 25%;
+}
+.dcfs-audio-text{
+  font-size: 36rpx;
+  color: white;
+  font-weight: 600;
+  margin-top: 30rpx;
+}

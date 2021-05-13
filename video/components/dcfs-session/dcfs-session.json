@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "dcfs-call": "../dcfs-call/dcfs-call",
+    "dcfs-called": "../dcfs-called/dcfs-called",
+    "dcfs-connect": "../dcfs-connect/dcfs-connect",
+    "dcfs-camera": "../dcfs-camera/dcfs-camera",
+    "dcfs-nav": "../dcfs-nav/dcfs-nav"
+  }
+}

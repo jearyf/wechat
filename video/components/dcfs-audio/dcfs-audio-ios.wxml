@@ -1,0 +1,8 @@
+<!--video/components/dcfs-audio/dcfs-audio-ios.wxml-->
+<view class="dcfs-audio-wrapper">
+  <view class="dcfs-audio-content">
+    <image src="{{defaultIcon}}" class="dcfs-audio-head-img"></image>
+    <view class="dcfs-audio-text">{{account}}</view>
+    <view class="dcfs-audio-text">{{timer}}</view>
+  </view>
+</view>

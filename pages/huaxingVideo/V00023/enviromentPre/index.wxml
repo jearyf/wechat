@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="container enviromentPro">
+  <view class="header-hint-area">
+    <view class="header-hint-content">
+      <text class="stront-text">智能双录开始前请做好以下准备</text>
+      <view>
+        <view class="header-hint-item">
+          <view>
+            <image src="../../../../images/huxing/V00023/frameo.png" alt="1111" class="header-hint-img"></image>
+          </view>
+          <view class="header-hint-item-text">
+            <text>请确保本人操作</text>
+          </view>
+        </view>
+        <view class="header-hint-item">
+          <view>
+            <image src="../../../../images/huxing/V00023/framet.png" alt="1111" class="header-hint-img"></image>
+          </view>
+          <view class="header-hint-item-text">
+            <text>请确保头部在拍摄范围内，面向镜头</text>
+          </view>
+        </view>
+        <view class="header-hint-item">
+          <view>
+            <image src="../../../../images/huxing/V00023/frames.png" alt="1111" class="header-hint-img"></image>
+          </view>
+          <view class="header-hint-item-text">
+            <text>请使用普通话明确回答“是”或“不是”</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  <!-- <view class="header-hint-setting"> -->
+    <!-- <view style="float:left;">
+        <text class="stront-text">播放语音设置</text>
+    </view> -->
+    <!-- <view class="section" style="float:right;">
+        <view class="picker">
+          <text style="color:red">正常语速| 女声 </text> 
+        </view>
+
+    </view> -->
+  <!-- </view> -->
+  <view class="enviromental-monitor-area">
+    <view style="float:left;">
+        <text class="stront-text">双录环境自动监测</text>
+    </view>
+    <view style="float:right;">
+      <text class="enviromental-monitor-btn" bindtap="openConfirm">重新监测</text>
+    </view>
+  </view>
+  <view class="enviromental-monitor-item">
+    <view style="float:left;">
+      <view>
+        <text class="item-point">•</text>
+        <text class="item-text">网络连接信号</text>
+      </view>
+    </view>
+    <view style="float:right;" wx:if="{{setNet == true}}">
+      <text class="item-status-successicon"> ✔ </text>
+    </view>
+    <view style="float:right;" wx:else>
+      <text class="item-status-erroricon"> ✘ </text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="enviromental-monitor-item">
+    <view style="float:left;">
+      <view>
+        <text class="item-point">•</text>
+        <text class="item-text">前置摄像头</text>
+      </view>
+    </view>
+    <view style="float:right;" wx:if="{{setCam == true}}">
+      <text class="item-status-successicon"> ✔ </text>
+    </view>
+    <view style="float:right;" wx:else>
+      <text class="item-status-erroricon"> ✘ </text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="enviromental-monitor-item">
+    <view style="float:left;">
+      <view>
+        <text class="item-point">•</text>
+        <text class="item-text" >麦克风权限</text>
+      </view>
+    </view>
+    <view style="float:right;" wx:if="{{setRec == true}}">
+      <text class="item-status-successicon"> ✔ </text>
+    </view>
+    <view style="float:right;" wx:else>
+      <text class="item-status-erroricon"> ✘ </text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="footer-hint">
+    <view class="footer-hint-icon">
+      <image src="../../../../images/huxing/V00023/tis.png" alt="1111" class="header-hint-img"></image>
+    </view>
+    <view>
+      <text class="footer-hint-text">智能双录过程中请确保环境光线充足，安静无干扰；智能双录会产生一定移动数据流量，建议在WIFI环境下进行</text>
+    </view>
+  </view>
+  <view class="btn-connent-view"  wx:if="{{showbut == true}}">
+    <button class="btn-conntent" bindtap="loginIm">
+      <span class="btn-conntent-span">连接智能座席</span>
+    </button>
+  </view>
+</view> 

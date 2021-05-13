@@ -1,0 +1,13 @@
+<!--video/components/dcfs-living/dcfs-living.wxml-->
+<view class="dcfs-living-wrapper">
+  <camera  device-position="front" flash="off" frame-size="small" binderror="onCameraError" class="camera-style" bindinitdone="onInitDone">
+    <cover-view class="dcfs-living-hint">
+      <cover-view>点击下面开始后，请在5秒内大声念出下面的数字</cover-view>
+      <cover-view class="dcfs-living-number">{{randomToken.randomNumber}}</cover-view>
+    </cover-view>
+    <cover-view class="dcfs-living-record">
+      <cover-view class="dcfs-living-down" wx:if="{{ isRecording }}">{{downNum}}</cover-view>
+      <cover-view wx:if="{{ !isRecording}}" class="dcfs-living-record-word" bindtap="onRecord">开始</cover-view>
+    </cover-view>
+  </camera>
+</view>
